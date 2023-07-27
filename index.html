@@ -21,7 +21,7 @@
         extend: {
           colors: {
             clifford: '#da373d',
-            'tea-pot': '#B1A055',
+            'tea-pot': '#F85559',
           }
         }
       }
@@ -38,7 +38,7 @@
   <header>
     <!-- nav bar  -->
     <nav>
-      <div class="navbar bg-none lg:bg-[#F85559] mt-5 max-w-[90%] m-auto rounded-full">
+      <div class="navbar bg-none lg:bg-[#F85559] mt-5 max-w-[90%] m-auto flex justify-between rounded-full">
         <!-- one  -->
         <div class="navbar-start">
           <div class="dropdown">
@@ -48,16 +48,16 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
               </svg>
             </label>
-            <div>
+            <div class="text-xl ">
               <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                 <li><a>Home</a></li>
                 <li><a>About Us</a></li>
                 <li><a>Shop</a></li>
-                <a href="#all_food">All Fruits</a>
+                <li><a>All Fruits</a></li>
               </ul>
             </div>
           </div>
-          <div class="navbar-center hidden lg:flex">
+          <div class="navbar-center hidden lg:flex text-xl text-white">
             <ul class="menu menu-horizontal px-1">
               <li><a>Home</a></li>
               <li><a>About Us</a></li>
@@ -67,12 +67,13 @@
           </div>    
         </div>
         <!-- two  -->
-        <div class="navbar-center"> <img src="images/logo.png" alt="">
-          <h2>Fruit Burst</h2>
+        <div class="navbar-center"> <img class="w-6" src="images/logo.png" alt="">
+          <h2 class="p-2 text-xl font-rubik lg:text-white font-semibold text-black">Fruit Burst</h2>
         </div>
         <!-- three  -->
         <div class="navbar-end hidden md:flex">
           <input type="text" placeholder="Search here" class="input input-bordered rounded-full w-32 md:w-auto" />
+          <!-- <div><i class="" style="color: #0c0d0d;"></i></div> -->
         </div>
       </div>
     </nav>
@@ -81,12 +82,13 @@
       <div class="carousel w-[80%] mx-[10%] mt-10">
         <!-- one -->
         <div id="slide1" class="carousel-item relative w-full">
-          <div class="absolute"><img src="images/banner1.png" class="w-full" /></div>
-          <div class="relative">
-            <h2 class="text-3xl">Exotic tastes at your doorstep</h2>
-            <p>We supply highly quality organic products</p>
-            <button>Shop Now</button>
+          <div class="bg-cover bg-center w-[100%] h-96" style="background-image: url(images/banner1.png)">
+         <div class="text-center lg:px-48 lg:py-10 px-8 py-10">
+          <div><h2 class="text-4xl text-white font-bold">Exotic tastes at your <br> doorstep</h2></div>
+         <div><p  class="text-sm text-white">We supply highly quality organic products</p></div>
+         <div><button class="bg-tea-pot mt-9 text-white font-semibold p-4 rounded-lg">Shop Now</button></div></div>
           </div>
+
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide4" class="btn btn-circle">❮</a>
             <a href="#slide2" class="btn btn-circle">❯</a>
@@ -94,7 +96,12 @@
         </div>
         <!-- two -->
         <div id="slide2" class="carousel-item relative w-full">
-          <img src="images/banner2.png" class="w-full" />
+          <div class="bg-cover bg-center w-[100%] h-96"" style="background-image: url(images/banner2.png)">
+            <div class="text-center lg:px-48 lg:py-10 px-8 py-10">
+             <div><h2 class="text-4xl text-white font-bold">Exotic tastes at your <br> doorstep</h2></div>
+            <div><p  class="text-sm text-white">We supply highly quality organic products</p></div>
+            <div><button class="btn bg-tea-pot mt-9 text-white font-semibold p-4 rounded-lg">Shop Now</button></div></div>
+             </div>
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide1" class="btn btn-circle">❮</a>
             <a href="#slide3" class="btn btn-circle">❯</a>
@@ -102,7 +109,12 @@
         </div>
         <!-- three  -->
         <div id="slide3" class="carousel-item relative w-full">
-          <img src="images/banner3.png" class="w-full" />
+          <div class="bg-cover bg-center w-[100%] h-96"" style="background-image: url(images/banner3.png)">
+            <div class="text-center lg:px-48 lg:py-10 px-8 py-10">
+             <div><h2 class="text-4xl text-white font-bold">Exotic tastes at your <br> doorstep</h2></div>
+            <div><p  class="text-sm text-white">We supply highly quality organic products</p></div>
+            <div><button class="bg-tea-pot mt-9 text-white font-semibold p-4 rounded-lg">Shop Now</button></div></div>
+             </div>
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide2" class="btn btn-circle">❮</a>
             <a href="#slide4" class="btn btn-circle">❯</a>
@@ -110,7 +122,12 @@
         </div>
         <!-- four  -->
         <div id="slide4" class="carousel-item relative w-full">
-          <img src="images/banner4.png" class="w-full" />
+          <div class="bg-cover bg-center w-[100%] h-96"" style="background-image: url(images/banner4.png)">
+            <div class="text-center lg:px-48 lg:py-10 px-8 py-10">
+             <div><h2 class="text-4xl text-white font-bold">Exotic tastes at your <br> doorstep</h2></div>
+            <div><p  class="text-sm text-white">We supply highly quality organic products</p></div>
+            <div><button class="bg-tea-pot mt-9 text-white font-semibold p-4 rounded-lg">Shop Now</button></div></div>
+             </div>
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide3" class="btn btn-circle">❮</a>
             <a href="#slide1" class="btn btn-circle">❯</a>
@@ -137,38 +154,39 @@
 
     <section class="w-[80%] mx-[10%]">
       <div class="mt-32 flex flex-col lg:flex-row justify-between gap-12">
-        <div>
-          <h2>Deal of the day</h2>
-          <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin
+        <div class="text-center lg:text-start flex-1">
+          <h2 class="text-4xl text-black font-bold">Deal of the day</h2>
+          <p class="mt-2 text-sm">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin
             literature from 45 BC, making it over 2000 years old.</p>
         </div>
 
-        <div class="grid grid-flow-col gap-5 text-center auto-cols-min">
-          <div class="flex flex-col">
-            <span class="countdown font-mono text-5xl">
-              <span style="--value:15;"></span>
-            </span>
-            days
-          </div>
-          <div class="flex flex-col">
-            <span class="countdown font-mono text-5xl">:
-              <span style="--value:10;"></span>
-            </span>
-            hours
-          </div>
-          <div class="flex flex-col">
-            <span class="countdown font-mono text-5xl">:
-              <span style="--value:24;"></span>
-            </span>
-            min
-          </div>
-          <div class="flex flex-col">
-            <span class="countdown font-mono text-5xl">:
-              <span style="--value:39;"></span>
-            </span>
-            sec
-          </div>
+       <div class="flex-1"> 
+        <div class="grid grid-flow-col gap-2 justify-center text-center auto-cols-min">
+        <div class="flex flex-col">
+          <span class="countdown font-mono text-5xl">
+            <span style="--value:15;"></span>
+          </span>
+          days
         </div>
+        <div class="flex flex-col">
+          <span class="countdown font-mono text-5xl">:
+            <span style="--value:10;"></span>
+          </span>
+          hours
+        </div>
+        <div class="flex flex-col">
+          <span class="countdown font-mono text-5xl">:
+            <span style="--value:24;"></span>
+          </span>
+          min
+        </div>
+        <div class="flex flex-col">
+          <span class="countdown font-mono text-5xl">:
+            <span style="--value:39;"></span>
+          </span>
+          sec
+        </div>
+      </div></div>
       </div>
     </section>
 
@@ -183,11 +201,11 @@
           <h2 class="card-title">12.90$ - 18.85$</h2>
           <p>Apples</p>
           <div class="rating">
-            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+            <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
           </div>
           <div class="card-actions">
             <!-- mehedi hasan  -->
@@ -207,8 +225,8 @@
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                 </div>
                 <div class="modal-action flex justify-center">
-                  <div><a href="#" class="btn">Close</a></div>
-                  <div><a href="#" class="btn">Buy Now</a></div>
+                  <div><a href="#" class="btn text-red-500 border-tea-pot">Close</a></div>
+                  <div><a href="#" class="btn bg-tea-pot text-white">Buy Now</a></div>
                 </div>
               </div>
 
@@ -248,8 +266,8 @@
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                 </div>
                 <div class="modal-action flex justify-center">
-                  <div><a href="#" class="btn">Close</a></div>
-                  <div><a href="#" class="btn">Buy Now</a></div>
+                  <div><a href="#" class="btn text-red-500 border-tea-pot">Close</a></div>
+                  <div><a href="#" class="btn bg-tea-pot text-white">Buy Now</a></div>
                 </div>
               </div>
 
@@ -289,8 +307,8 @@
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                 </div>
                 <div class="modal-action flex justify-center">
-                  <div><a href="#" class="btn">Close</a></div>
-                  <div><a href="#" class="btn">Buy Now</a></div>
+                  <div><a href="#" class="btn text-red-500 border-tea-pot">Close</a></div>
+                  <div><a href="#" class="btn bg-tea-pot text-white">Buy Now</a></div>
                 </div>
               </div>
 
@@ -330,8 +348,8 @@
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                 </div>
                 <div class="modal-action flex justify-center">
-                  <div><a href="#" class="btn">Close</a></div>
-                  <div><a href="#" class="btn">Buy Now</a></div>
+                  <div><a href="#" class="btn text-red-500 border-tea-pot">Close</a></div>
+                  <div><a href="#" class="btn bg-tea-pot text-white">Buy Now</a></div>
                 </div>
               </div>
 
@@ -340,7 +358,7 @@
         </div>
       </div>
     </section>
-<div class="text-center mt-7"> <button class="bg-tea-pot px-16">Shop All</button></div>
+<div class="text-center mt-7"> <button class="bg-tea-pot p-4 rounded-xl text-white">Shop All</button></div>
 
 
 <!-- background image hero section  -->
@@ -453,9 +471,36 @@
   </main>
 
 <!-- it is the last and end section footer section -->
-  <footer class="bg-black h-[350px] mt-16">
 
-  </footer>
+    <footer class="mt-12">
+      <div class="footer footer-center p-10 bg-black text-base-content rounded">
+        <div class="text-white grid grid-cols-3 lg:grid-cols-6 gap-4">
+          <a class="link link-hover">Home</a> 
+          <a class="link link-hover">About Us</a> 
+          <a class="link link-hover">Shop</a> 
+          <a class="link link-hover">All Fruits</a>
+          <a class="link link-hover">Support</a>
+          <a class="link link-hover">My Account</a>
+        </div> 
+        <div>
+          <div class="flex justify-around items-center gap-7">
+            <a href="#"><img class="w-7" src="icon/twitter 1.png" alt=""></a> 
+            <a href="#"><img class="w-7" src="icon/facebook 1.png" alt=""></a> 
+            <a href="#"><img class="w-9" src="icon/Group 49.png" alt=""></a> 
+            <a href="#"><img class="w-7" src="icon/linkedin 1.png" alt=""></a> 
+            <a href="#"><img class="w-7" src="icon/instagram 1.png" alt=""></a> 
+            <a href="#"><img class="w-7" src="icon/apple 1.png" alt=""></a> 
+            
+          </div>
+        </div> 
+
+
+        <div class="flex justify-center items-center">
+          <div><img class="w-[50%]" src="images/logo.png" alt=""></div>
+          <div class="text-xl text-white">Fruit Burst</div>
+        </div>
+      </div>
+    </footer>
 </body>
 
 </html>
